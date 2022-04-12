@@ -53,7 +53,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px; 
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 
 /* ------ header ------> */
@@ -180,7 +180,15 @@ padding-bottom: 200px;
 .section-des-list-item:last-child{
   margin-right: 0;
 }
-
+.section-des-list-item-link{
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 10px;
+  background: #F5F4FA;
+  border: 2px solid turquoise;
+  border-radius: 4px;
+}
 .section-des-list-item-caption{
   margin-top: 0;
   margin-bottom: 10px;
@@ -265,18 +273,62 @@ height: auto;
 }
 .section-team-list-item-text{
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  
 }
+.section-team-soc{
+  display: flex;
+  flex-direction: row;
+
+}
+.section-team-soc-item:not(:last-child){
+  margin-right: 10px;
+}
+.section-team-soc-item{
+  width: 44px;
+  height: 44px;
+  background: #2196f3;
+}
+/* ------ customers------> */
+.customers{
+  background: var(--main-background-color);
+}
+.customers-list{
+  display: flex;
+  flex-flow: row;
+}
+.customers-list-item{
+  margin-right: 30px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+.customers-list-item:last-child{
+  margin-right: 0;
+}
+.customers-list-link{
+ display: flex;
+  padding: 16px 32px;
+}
+
 /* ------ footer------> */
 .footer
 {
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2F303A;
+}
+.footer-flex{
+  display: flex;
+  flex-direction: row;
+
+
+}
+.footer-contacts{
+  margin-right: 70px;
 }
 .footer-logo
 {
@@ -310,6 +362,35 @@ height: auto;
 
 .color-decoration{
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-soc{
+ 
+}
+
+.footer-soc-title{
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.footer-soc-list{
+  display: flex;
+  flex-direction: row;
+}
+.footer-soc-list-item
+{
+width: 44px;
+height: 44px;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.1);
+}
+.footer-soc-list-item:not(:last-child){
+  margin-right: 10px;
 }
 /* ------------------ PORTFOLIO-----------------------> */
 /* ------ portfolio menu------> */
