@@ -124,16 +124,16 @@ body {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  outline: 2px solid red;
-  background-color: #2196f3;
+  background-image: url(../images/svg/envelope.svg);
+  background-size: cover;
 }
 .header-contacts-list-tel::before {
   content: ' ';
-  width: 16px;
-  height: 12px;
+  width: 10px;
+  height: 16px;
   margin-right: 10px;
-  outline: 2px solid red;
-  background-color: #11bc1f;
+  background-image: url(../images/svg/smartphone.svg);
+  background-size: cover;
 }
 /* ------ section banner ------> */
 .section-banner {
@@ -213,15 +213,27 @@ body {
 }
 .icon-antenna::before {
   background-image: url(../images/svg/antenna\ 1.svg);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .icon-clock::before {
   background-image: url(../images/svg/clock\ 1.svg);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .icon-diagram::before {
   background-image: url(../images/svg/diagram\ 1.svg);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .icon-astronaut::before {
   background-image: url(../images/svg/astronaut\ 1.svg);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .section-des-list-item:last-child {
   margin-right: 0;
@@ -361,6 +373,11 @@ body {
   padding-bottom: 60px;
   background: #2f303a;
 }
+/* .footer-flex1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+} */
 .footer-flex {
   display: flex;
   flex-direction: row;
@@ -419,6 +436,9 @@ body {
   flex-direction: row;
 }
 .footer-soc-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -427,6 +447,7 @@ body {
 .footer-soc-list-item:not(:last-child) {
   margin-right: 10px;
 }
+
 /* ------------------ PORTFOLIO-----------------------> */
 /* ------ portfolio menu------> */
 .portfolio-menu-list {
