@@ -337,12 +337,20 @@ body {
   align-items: center;
   width: 44px;
   height: 44px;
-  background: greenyellow;
+  background: #ffffff;
   border-radius: 50%;
-  /* background-size: 20px 20px; */
-  /* background-image: url(../images/svg/antenna\ 1.svg);
-  background-repeat: no-repeat;
-  background-position: center; */
+}
+
+.section-team-soc-item-link:hover,
+.section-team-soc-item-link:focus {
+  background: #2196f3;
+}
+.section-team-soc-item-link-icon {
+  fill: #afb1b8;
+}
+.section-team-soc-item-link:hover .section-team-soc-item-link-icon,
+.section-team-soc-item-link:focus .section-team-soc-item-link-icon {
+  fill: #ffffff;
 }
 /* ------ customers------> */
 .customers {
@@ -354,33 +362,43 @@ body {
 }
 .customers-list-item {
   margin-right: 30px;
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 }
 .customers-list-item:last-child {
   margin-right: 0;
 }
 .customers-list-link {
   display: flex;
-  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.customers-list-link:hover,
+.customers-list-link:focus {
+  border: 1px solid #2196f3;
 }
 
+.customers-list-link:hover .customers-soc-item-link-icon,
+.customers-list-link:focus .customers-soc-item-link-icon {
+  fill: #2196f3;
+}
+
+.customers-soc-item-link-icon {
+  fill: #afb1b8;
+}
 /* ------ footer------> */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2f303a;
 }
-/* .footer-flex1 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-} */
+
 .footer-flex {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
 }
 .footer-contacts {
   margin-right: 70px;
@@ -416,14 +434,10 @@ body {
 .color-decoration {
   color: rgba(255, 255, 255, 0.6);
 }
-/* .footer-soc{
- 
-} */
 
 .footer-soc-title {
   margin-top: 0;
   margin-bottom: 20px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -435,7 +449,8 @@ body {
   display: flex;
   flex-direction: row;
 }
-.footer-soc-list-item {
+
+.footer-soc-list-item-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -444,8 +459,16 @@ body {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
 }
+
 .footer-soc-list-item:not(:last-child) {
   margin-right: 10px;
+}
+.footer-soc-item-link-icon {
+  fill: #ffffff;
+}
+.footer-soc-list-item-link:hover,
+.footer-soc-list-item-link:focus {
+  background: #2196f3;
 }
 
 /* ------------------ PORTFOLIO-----------------------> */
