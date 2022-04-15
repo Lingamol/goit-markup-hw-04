@@ -50,7 +50,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* ------ header ------> */
@@ -119,10 +119,7 @@ body {
 .link-decoration:focus .smartphone-icon {
   fill: var(--accent-color);
 }
-/* .link-decoration:hover .smartphone-icon,
-.link-decoration:focus .smartphone-icon {
-  fill: var(--accent-color);
-} */
+
 .curent-page {
   color: var(--accent-color);
 }
@@ -136,22 +133,7 @@ body {
   height: 16px;
   margin-right: 10px;
 }
-/* .header-contacts-list-mail::before {
-  content: ' ';
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-image: url(../images/svg/envelope.svg);
-  background-size: cover;
-}
-.header-contacts-list-tel::before {
-  content: ' ';
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url(../images/svg/smartphone.svg);
-  background-size: cover;
-} */
+
 /* ------ section banner ------> */
 .section-banner {
   padding-top: 0;
@@ -164,7 +146,7 @@ body {
   height: 600px;
   margin-right: auto;
   margin-left: auto;
-  outline: 4px solid green;
+  /* outline: 4px solid green; */
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/bannerbg.jpg);
   background-repeat: no-repeat;
@@ -216,7 +198,16 @@ body {
   width: 270px;
   margin-right: 30px;
 }
-.section-des-list-item::before {
+.section-des-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+/* .section-des-list-item::before {
   content: '';
   display: block;
   height: 120px;
@@ -227,7 +218,7 @@ body {
   background-size: contain;
   background-position: center;
 }
-/* .icon-antenna::before {
+.icon-antenna::before {
   background-image: url(../images/svg/antenna\ 1.svg);
   background-size: 70px 70px;
   background-repeat: no-repeat;
@@ -519,6 +510,8 @@ body {
 .portfolio-menu-list-item-btn:focus {
   color: var(--white-text-color);
   background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* ------ portfolio projects------> */
 
@@ -531,6 +524,10 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
   background: #ffffff;
+}
+.portfolio-projects-list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-projects-list-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
