@@ -262,7 +262,6 @@ body {
 }
 /* ------ section our_work------> */
 .section-work {
-  background: var(--main-background-color);
   padding-top: 0;
 }
 .section-work-list {
